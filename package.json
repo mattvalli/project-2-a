@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint": "./node_modules/.bin/eslint --quiet .",
-    "fix": "./node_modules/.bin/eslint --fix **.*.js",
-    "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix **.*.js",
+    "test": "npm run lint && cross-env NODE_ENV=test mocha -u bdd --reporter spec --exit"
   },
   "license": "ISC",
   "dependencies": {
